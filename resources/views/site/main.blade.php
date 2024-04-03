@@ -15,13 +15,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Theme switcher (color modes) -->
-    <script src="assets/js/theme-switcher.js"></script>
+    <!--<script src="assets/js/theme-switcher.js"></script>-->
 
     <!-- Favicon and Touch Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#052042">
     <link rel="shortcut icon" href="assets/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#052042">
@@ -49,9 +48,64 @@
             --si-navbar-active-color: #ffc800;
         }
 
+        .btn-outline-primary {
+            --si-btn-color: #ffc800;
+            --si-btn-border-color: #ffc800;
+            --si-btn-hover-color: #000;
+            --si-btn-hover-bg: #ffc800;
+            --si-btn-hover-border-color: #ffc800;
+            --si-btn-focus-shadow-rgb: 99, 102, 241;
+            --si-btn-active-color: #000;
+            --si-btn-active-bg: #ffc800;
+            --si-btn-active-border-color: #ffc800;
+            --si-btn-active-shadow: unset;
+            --si-btn-disabled-color: #ffc800;
+            --si-btn-disabled-bg: transparent;
+            --si-btn-disabled-border-color: #ffc800;
+            --si-gradient: none;
+        }        
+
         body {
             background-color: #052042;
         }
+
+        .bg-primary {
+            background-color: #ffc800; !important;
+        }        
+
+        .icone-escolher{
+            color: #ffc800;
+            font-size: 40px; 
+        }
+
+        .bx-check-circle{
+            color: #ffc800 !important;
+        }
+
+        .texto-destaque{
+            color: #ffc800 !important;
+        }
+
+        .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+            background-color: #ffc800 !important;
+        }
+
+        .nav-tabs .nav-link:hover:not(.active), .nav-tabs .nav-link.show:not(.active) {
+            color:  #ffc800 !important;
+        }
+        .text-primary {
+            color:  #ffc800 !important;
+        }
+
+        .nav-link:hover, .nav-link:focus {
+            color:  #ffc800 !important;
+        }        
+        
+        .text-gradient-primary {
+            background: linear-gradient(to right, #ffc800, #ffe37b, #000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+        }        
 
         .btn-primary {
             --si-btn-color: #052042;
@@ -179,7 +233,7 @@
     <!-- Page loading spinner -->
     <div class="page-loading active">
         <div class="page-loading-inner">
-            <div class="page-spinner"></div><span>Carregando...</span>
+            <div class="page-spinner"></div><span>Levantando Voo...</span>
         </div>
     </div>
 
@@ -187,7 +241,6 @@
     <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
     <main class="page-wrapper">
-
         @include('site.navbar')
         @include('site.banner-parallax')
         @include('site.conheca-o-beeapp')
@@ -286,7 +339,7 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main Theme Script -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>

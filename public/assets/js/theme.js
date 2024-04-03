@@ -7461,7 +7461,7 @@
    * Price switch
    */
 
-  (() => {
+  /*(() => {
     let switcherWrapper = document.querySelectorAll('.price-switch-wrapper');
     if (switcherWrapper.length <= 0) return;
     for (let i = 0; i < switcherWrapper.length; i++) {
@@ -7486,7 +7486,7 @@
         }
       });
     }
-  })();
+  })();*/
 
   /**
    * Cascading (Masonry) grid layout

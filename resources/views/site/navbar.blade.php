@@ -20,9 +20,6 @@
                     <li class="nav-item">
                         <a href="#depoimentos" class="nav-link">Depoimentos</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="https://blog.beeapp.com.br" class="nav-link">Blog</a>
-                    </li>
                 </ul>
             </div>
             <div class="offcanvas-header border-top">

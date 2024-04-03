@@ -27,9 +27,6 @@
                 <div class="parallax-layer zindex-2" data-depth="0.28">
                     <img src="assets/img/landing/saas-1/hero/layer06.png" alt="Layer">
                 </div>
-                <div class="parallax-layer zindex-2" data-depth="0.35">
-                    <img src="assets/img/landing/saas-1/hero/layer07.png" alt="Layer">
-                </div>
             </div>
         </div>
         <a id="escolher"></a>
