@@ -29,6 +29,6 @@
                 </div>
             </div>
         </div>
-        <a id="escolher"></a>
+        <a id="conheca"></a>
     </div>
 </section>

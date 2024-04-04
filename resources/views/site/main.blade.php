@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Beeapp Gestão Inteligente</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Beeapp Gestão Inteligente">
@@ -56,7 +57,7 @@
             --si-btn-hover-border-color: #ffc800;
             --si-btn-focus-shadow-rgb: 99, 102, 241;
             --si-btn-active-color: #000;
-            --si-btn-active-bg: #ffc800;
+            --si-btn-active-bg: #052042;
             --si-btn-active-border-color: #ffc800;
             --si-btn-active-shadow: unset;
             --si-btn-disabled-color: #ffc800;
@@ -98,6 +99,10 @@
         }
 
         .nav-link:hover, .nav-link:focus {
+            color:  #052042 !important;
+        }        
+
+        .nav-link-rodape:hover, .nav-link-rodape:focus {
             color:  #ffc800 !important;
         }        
         
@@ -258,68 +263,53 @@
                     <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
                         <img src="assets/img/logo.png" width="200" alt="Beeapp">
                     </div>
-                    <p class="fs-sm pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea
-                        velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla
-                        nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+                    <p class="fs-sm pb-lg-3 mb-4">
+                        A Beeapp, uma inovadora empresa especializada em tecnologia e consultoria na gestão de processos empresariais, está comprometida com a constante aprimoramento de sua plataforma. Nossa equipe, reconhecida por sua justiça e integridade, trabalha lado a lado com nossos clientes para garantir excelência e inovação contínuas.                        
+                    </p>
                 </div>
                 <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
                     <div id="footer-links" class="row">
                         <div class="col-lg-4">
-                            <h6 class="mb-2">
-                                <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
-                                    data-bs-toggle="collapse">Useful Links</a>
-                            </h6>
+                            <h6 class="mb-2">Navegação</h6>
                             <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                                 <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Features</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Integrations</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Our Clients</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Blog</a></li>
-                                </ul>
-                                <ul class="nav flex-column mb-2 mb-lg-0">
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a>
-                                    </li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Privacy Policy</a></li>
+                                    <li class="nav-item"><a href="{{config('APP_URL')}}"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                                    <li class="nav-item"><a href="{{config('APP_URL')}}#conheca"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Conheça o Beeapp</a></li>
+                                    <li class="nav-item"><a href="{{config('APP_URL')}}#planos"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Planos</a></li>
+                                    <li class="nav-item"><a href="{{config('APP_URL')}}#depoimentos"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Depoimentos</a></li>
+                                    <li class="nav-item"><a href="{{config('APP_URL')}}#contato"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Fale Conosco</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-3">
-                            <h6 class="mb-2">
-                                <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
-                                    data-bs-toggle="collapse">Socials</a>
-                            </h6>
+                            <h6 class="mb-2">Redes Sociais</h6>
                             <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                                 <ul class="nav flex-column mb-2 mb-lg-0">
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
-                                    <li class="nav-item"><a href="#"
-                                            class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                                    <li class="nav-item">
+                                        <a href="https://www.instagram.com/beeapp_oficial" class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">
+                                            Instagram
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
-                            <h6 class="mb-2">Contact Us</h6>
-                            <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+                            <h6 class="mb-2">Contatos</h6>
+                            <a href="mailto:ataliba@beeapp.com.br" class="fw-medium nav-link nav-link-rodape">ataliba@beeapp.com.br</a>
+                            <a href="https://api.whatsapp.com/send?phone=5547999227879" class="fw-medium nav-link nav-link-rodape">47 9 9922-7879</a>
                         </div>
                     </div>
                 </div>
             </div>
             <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-                &copy; All rights reserved. Made by
-                <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank"
-                    rel="noopener">Createx Studio</a>
+                Desenvolvido por
+                <a class="nav-link nav-link-rodape d-inline-block p-0" href="https:www.j6.net.br" target="_blank"
+                    rel="noopener">J6 Softwares para Internet</a>
             </p>
         </div>
     </footer>
@@ -340,6 +330,21 @@
 
     <!-- Main Theme Script -->
     <script src="assets/js/theme.js"></script>
+    <script type="module">
+        $("#bt-form").click(function(){
+            
+            //campos do form
+            let nome = $("#fn").val();
+            let email = $("#email").val();
+            let mensagem = $("#message").val();
+
+            if( nome != "" && email != "" && mensagem != ""){
+                $("#bt-form").text("Enviando Mensagem ...");
+                $("#bt-form").attr("disabled", true);
+            }
+
+        });
+    </script>
 </body>
 
 </html>

@@ -12,7 +12,7 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="#escolher" class="nav-link">Conheça o Beeapp</a>
+                        <a href="#conheca" class="nav-link">Conheça o Beeapp</a>
                     </li>
                     <li class="nav-item">
                         <a href="#planos" class="nav-link">Planos</a>

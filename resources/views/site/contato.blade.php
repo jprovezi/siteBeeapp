@@ -7,12 +7,17 @@
                 <h2 class="display-1 text-gradient-primary pb-sm-2 pb-md-3 mb-3">Contato</h2>
                 <div class="nav d-block lead pt-lg-5">
                     <a href="https://api.whatsapp.com/send?phone=5547999227879"
-                        class="nav-link fw-normal text-decoration-underline p-0 mb-4">
-                        + 55 47 9922-7879
+                        class="nav-link nav-link-rodape fw-normal p-0 mb-4">
+                        47 9 9922-7879 (whatsapp)
                     </a>
                 </div>
-            </div>
+            </div>        
             <div class="col-lg-6 offset-xl-1 offset-xxl-2 pt-3 pt-md-4 pt-lg-3 mt-3">
+                @isset($mensagem)
+                    <div class="alert alert-warning" role="alert">
+                        Mensagem enviada com sucesso, em breve entraremos em contato!
+                    </div>                
+                @endisset
                 <form class="needs-validation" novalidate="" method="POST" action="{{route('envio-form')}}">
                     @csrf
                     <div class="row g-4">
@@ -32,7 +37,7 @@
                             <div class="invalid-feedback">Mensagem obrigatória!</div>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto">Enviar Mensagem</button>
+                            <button type="submit" class="btn btn-lg btn-primary w-100 w-sm-auto" id="bt-form">Enviar Mensagem</button>
                         </div>
                     </div>
                 </form>

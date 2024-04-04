@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\contatoSite;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 
 class SiteController extends Controller
 {
@@ -145,6 +146,18 @@ class SiteController extends Controller
         ]);
     }
 
+    public function mensagemForm()
+    {
+        
+        return view('site.main',[
+            "porqueEscolheres" => $this->porqueEscolher(),
+            "beneficios" => $this->beneficios(),
+            "planos" => $this->planos(),
+            "depoimentos" => $this->depoimentos(),
+            "mensagem" => true,
+        ]);
+    }
+
     public function formulario(Request $request){
 
         //Validando informacoes
@@ -162,10 +175,10 @@ class SiteController extends Controller
         ];
 
         //Enviando email
-        Mail::send(new contatoSite("jprovezi@gmail.com", $dados));
+        Mail::send(new contatoSite("jprovezi@gmail.com", "João Provezi", $dados));
 
         //redireciona o usuário
-        return redirect(route('mensagem-enviada'));
+        return redirect('mensagem-enviada#contato');
 
     }
 }

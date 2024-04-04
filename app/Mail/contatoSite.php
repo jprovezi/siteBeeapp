@@ -7,16 +7,18 @@ class contatoSite extends Mailable
 {
     use Queueable, SerializesModels;
     private $emailEnviar;
-    private $requestForm;
+    private $nome;
+    private $dadosForm;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($emailEnviar, $requestForm)
+    public function __construct($emailEnviar, $nome, $dadosForm)
     {
         $this->emailEnviar = $emailEnviar;
-        $this->requestForm = $requestForm;
+        $this->nome = $nome;
+        $this->dadosForm = $dadosForm;
     }
     /**
      * Build the message.
@@ -25,12 +27,12 @@ class contatoSite extends Mailable
      */
     public function build()
     {
-        $dados = $this->requestForm;
-        $this->subject('Email de teste');
-        $this->to($this->emailEnviar, $this->requestForm);
+        $this->subject('Mensagem site Beeapp');
+        $this->to($this->emailEnviar, $this->nome);
+        $this->cc("ataliba@beeapp.com.br", "Tecnologia Beeapp");
         return $this->view('mail.contatoSite', [
             'email' => $this->emailEnviar,
-            'dados' => $dados,
+            'dados' => $this->dadosForm,
         ]);
     }
 }
