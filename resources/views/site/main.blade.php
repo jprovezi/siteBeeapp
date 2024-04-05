@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Beeapp Gestão Inteligente</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Beeapp Gestão Inteligente">
@@ -330,21 +329,6 @@
 
     <!-- Main Theme Script -->
     <script src="assets/js/theme.js"></script>
-    <script type="module">
-        /*$("#bt-form").click(function(){
-            
-            //campos do form
-            let nome = $("#fn").val();
-            let email = $("#email").val();
-            let mensagem = $("#message").val();
-
-            if( nome != "" && email != "" && mensagem != ""){
-                $("#bt-form").text("Enviando Mensagem ...");
-                $("#bt-form").attr("disabled", true);
-            }
-
-        });*/
-    </script>
 </body>
 
 </html>
