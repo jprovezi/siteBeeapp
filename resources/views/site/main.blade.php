@@ -331,7 +331,7 @@
     <!-- Main Theme Script -->
     <script src="assets/js/theme.js"></script>
     <script type="module">
-        $("#bt-form").click(function(){
+        /*$("#bt-form").click(function(){
             
             //campos do form
             let nome = $("#fn").val();
@@ -343,7 +343,7 @@
                 $("#bt-form").attr("disabled", true);
             }
 
-        });
+        });*/
     </script>
 </body>
 

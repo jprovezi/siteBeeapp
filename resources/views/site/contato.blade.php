@@ -18,7 +18,7 @@
                         Mensagem enviada com sucesso, em breve entraremos em contato!
                     </div>                
                 @endisset
-                <form class="needs-validation" novalidate="" method="POST" action="{{route('envio-form')}}">
+                <form class="needs-validation" novalidate="" method="POST" action="{{route('post-form')}}">
                     @csrf
                     <div class="row g-4">
                         <div class="col-sm-6">
