@@ -15,7 +15,7 @@
                                 <div class="ps-4">
                                     <h3 class="fs-lg fw-bold text-body mb-2">PLANO IMPULSO</h3>
                                     <h4 class="h3 lh-1 mb-0">
-                                        <span class="h6">12x </span>R$540,00
+                                        <span class="h6">12x </span>R$297,00 <span class="h6">+ setup</span>
                                     </h4>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
                                 <div class="flex-shrink-0 bg-secondary rounded-3">
-                                    <img src="assets/img/landing/saas-1/pricing/basic.png" width="84"
+                                    <img src="assets/img/landing/saas-1/pricing/standard.png" width="84"
                                         alt="Icon">
                                 </div>
                                 <div class="ps-4">
@@ -74,7 +74,7 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
                                 <div class="flex-shrink-0 bg-secondary rounded-3">
-                                    <img src="assets/img/landing/saas-1/pricing/basic.png" width="84"
+                                    <img src="assets/img/landing/saas-1/pricing/ultimate.png" width="84"
                                         alt="Icon">
                                 </div>
                                 <div class="ps-4">
