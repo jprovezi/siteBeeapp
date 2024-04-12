@@ -23,7 +23,7 @@
                 </ul>
             </div>
             <div class="offcanvas-header border-top">
-                <a href="{{config('APP_URL')}}#contato"
+                <a href="#contato"
                     class="btn btn-primary w-100" rel="noopener">
                     Fale Conosco
                 </a>

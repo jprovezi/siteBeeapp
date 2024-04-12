@@ -10,102 +10,171 @@ use Illuminate\Support\Facades\Redirect;
 class SiteController extends Controller
 {
 
-    private function beneficios() : array {
-        return [
-            "Aumento da competitividade no mercado",
-            "Facilitação da colaboração e comunicação",
-            "Redução de custos",
-            "Redução de erros e defeitos",
-            "Conformidade regulatória",
-            "Gestão proativa de riscos",
-            "Padronização e consistência",
-            "Melhoria da qualidade dos produtos e serviços",
-            "Aumento da satisfação do cliente",
-            "Agilidade e adaptabilidade",
-            "Aumento da produtividade dos funcionários",
-            "Satisfação e engajamento dos funcionários",
-            "Melhoria da gestão de terceirizados",
-            "Melhoria na gestão da operação em múltiplos locais",
-            "Auditorias simplificadas e eficientes",
-            "Adoção de práticas de melhoria e contínua",
-        ];        
-    }
-
-    private function planos() : array {
+    private function planos() : array 
+    {
         return [
             "basic" =>[
-                "Instalação e customização da plataforma",
-                "Treinamento da plataforma",
+                "Personalização da plataforma com a interface do cliente",
+                "Acesso total à todas as funcionalidades da plataforma",
+                "1 hora de mentoria de adequação da plataforma às necessidades do cliente",
+                "Cloud em nuvem com capacidade de armazenagem gerenciada",
+                "Disponibilidade de acesso para até 20 usuários",
+                "Suporte técnico em horário comercial via plataforma Beeapp",
+                "a partir do segundo ano, haverá cobrança apenas do custo da licença de uso da plataforma.",
             ],
             "standard" =>[
-                "Instalação e customização da plataforma",
-                "Treinamento da plataforma",
-                "Consultoria da sua empresa com o Beeapp",
-                "Assessoria da sua empresa com o Beeapp",
+                "Oferece todas as funcionalidades do Plano Impulso",
+                "Cloud com capacidade de armazenagem aprimorada",
+                "Disponibilidade de acesso para até 50 / 100 / 200 usuários",
+                "Gerenciador de Múltiplos Negócios para até 10 / 20 / 30 empresas",
+                "1 sessão de treinamento especializado. (orçamento personalizado sob consulta)",
             ],
             "ultimate" =>[
-                "Instalação e customização da plataforma",
-                "Treinamento da plataforma",
-                "Consultoria da sua empresa com o Beeapp",
-                "Assessoria da sua empresa com o Beeapp",
-                "Padronização dos documentos",
-                "Implementação e acompanhamento interno",
-                "Horas de programação para adequação interna do seu negócio",
+                "Oferece personalização completa",
+                "Cloud próprio e acessos ilimitados",
+                "Gerenciador de Múltiplos Negócios ilimitado",
+                "Serviços de programação",
+                "Integrações avançadas",
+                "Consultoria dedicada e suporte premium",
+                "Sessões de treinamento especializado",
+                "Atendendo às demandas de grandes empresas por eficiência e inovação (orçamento personalizado sob consulta). ",
             ],
         ];
     }
 
-    private function porqueEscolher() : array {
+    private function funcionalidades() : array 
+    {
         return[
             [
-                "icone" => "bx bx-check-shield",
-                "titulo" => "Gestão de compliance",
-                "texto" => "Registre, acompanhe e resolva não conformidades de forma eficiente.",
+                "titulo" => "Gestão de Processos",
+                "texto" => "Ferramentas intuitivas para mapear, executar e otimizar processos empresariais, garantindo eficiência operacional e o padrão de qualidade.",
             ],
             [
-                "icone" => "bx bxs-graduation",
-                "titulo" => "Treinamento e capacitação",
-                "texto" => "Organize e execute cursos e treinamentos da sua empresa em qualquer formato, diminuindo
-                custos e tempo dos gestores.",
+                "titulo" => "Feedbacks Documentados",
+                "texto" => "Sistema centralizado para registrar e analisar feedbacks em tempo real, promovendo uma cultura de melhoria contínua.",
             ],
             [
-                "icone" => "bx bx-like",
-                "titulo" => "Feedback em tempo real",
-                "texto" => "Acompanhe a jornada do seu colaborador, registrando as ocorrências e avanços, levando
-                orientações valiosas.",
+                "titulo" => "Tarefas Procedimentadas",
+                "texto" => "Facilita a colaboração em equipe com tarefas claramente definidas e procedimentos padronizados, aumentando a produtividade e a eficácia na execução.",
             ],
             [
-                "icone" => "bx bx-task",
-                "titulo" => "Tarefas procedimentadas",
-                "texto" => "Delegue tarefas e responsabilidade e gerencie o tempo e a conformidade na execução do
-                trabalho das equipes.",
+                "titulo" => "Avaliação de Desempenho",
+                "texto" => "Recursos avançados para avaliar o desempenho individual das pessoas e do negócio, identificando oportunidades de desenvolvimento.",
             ],
             [
-                "icone" => "bx bx-layout",
-                "titulo" => "Sistemas personalizados",
-                "texto" => "Nossa plataforma será totalmente personalizada com seu layout e com a estrutura de àreas e
-                cargos do seu negócio.",
+                "titulo" => "Gerenciamento em Cloud",
+                "texto" => "Solução baseada na nuvem, oferecendo acessibilidade, segurança e escalabilidade.",
             ],
             [
-                "icone" => "bx bx-group",
-                "titulo" => "Gestão de terceirizados",
-                "texto" => "Gerencie os processos e controle o trabalho de seus prestadores de serviços, garantindo
-                conformidade na execução.",
+                "titulo" => "Colaboração e Treinamento",
+                "texto" => "Plataforma projetada para fomentar a colaboração e facilitar treinamentos, essenciais para a capacitação de equipes.",
             ],
             [
-                "icone" => "bx bx-brain",
-                "titulo" => "Onboarding facilitado",
-                "texto" => "Em um clique você transfere todas as funções e processos de um cargo para outra pessoa da
-                equipe e evita a descontinuidade do trabalho.",
+                "titulo" => "Onboarding e Gestão de Cargos",
+                "texto" => "Ferramentas para integrar novos colaboradores de forma eficaz e fazer associação de cargos garantindo a continuidade do trabalho.",
             ],
             [
-                "icone" => "bx bxs-file-doc",
-                "titulo" => "Customização de documentos",
-                "texto" => "Distribua os documentos e conhecimento da sua empresa de forma que apenas usuários daquele
-                cargo ou setor, tenham acesso a ele.",
+                "titulo" => "Gestão da Informação",
+                "texto" => "Repositório seguro para centralizar e gerenciar o conhecimento corporativo.",
+            ],
+            [
+                "titulo" => "Gestão de Múltiplos Negócios",
+                "texto" => "Tecnologia avançada para centralizar o gerenciamento de negócios ou projetos com necessidades de processos específicos.",
             ],
         ];
     }
+
+    private function beneficios() : array 
+    {
+        return[
+            [
+                "titulo" => "Simplicidade e Eficiência",
+                "texto" => "Interface intuitiva e recursos automatizados que simplificam operações complexas, economizando tempo e recursos.",
+            ],
+            [
+                "titulo" => "Performance Organizacional Elevada",
+                "texto" => "Com processos otimizados e uma equipe bem treinada, sua empresa alcançará níveis superiores de desempenho.",
+            ],
+            [
+                "titulo" => "Desenvolvimento Contínuo",
+                "texto" => "A avaliação de desempenho e os feedbacks documentados promovem o crescimento pessoal e profissional contínuo.",
+            ],
+            [
+                "titulo" => "Cultura de Colaboração",
+                "texto" => "Incentiva uma cultura empresarial onde a colaboração e o compartilhamento de conhecimentos são valorizados, fortalecendo o senso de comunidade.",
+            ],
+            [
+                "titulo" => "Flexibilidade e Escalabilidade",
+                "texto" => "Sendo uma solução em nuvem, adapta-se facilmente ao crescimento da sua empresa, sem necessidade de investimentos pesados em infraestrutura.",
+            ],
+            [
+                "titulo" => "Acesso Universal",
+                "texto" => "Acessível de qualquer lugar, a qualquer hora, facilitando o trabalho remoto e a gestão à distância.",
+            ],
+            [
+                "titulo" => "Qualificação e Retenção de Talentos",
+                "texto" => "Com uma forte ênfase no desenvolvimento e na avaliação de desempenho, a Beeapp ajuda a qualificar e reter talentos, criando equipes de alto desempenho.",
+            ],
+        ];
+    }
+
+    private function transformacoes() : array 
+    {
+        return[
+            [
+                "titulo" => "Otimização de Processos",
+                "texto" => "A Beeapp permite que as empresas mapeiem e refinem seus processos, eliminando ineficiências e redundâncias. Isso resulta em operações mais enxutas e eficazes, reduzindo custos e aumentando a produtividade.",
+            ],
+            [
+                "titulo" => "Automatização e Eficiência",
+                "texto" => "Através da automatização de tarefas operacionais, a Beeapp libera as lideranças para se concentrarem em atividades de maior valor, melhorando a eficiência geral e a satisfação no trabalho.",
+            ],
+            [
+                "titulo" => "Fortalecimento da Cultura de Feedback",
+                "texto" => "Implementando um sistema estruturado de feedbacks documentados, a Beeapp promove uma cultura de comunicação aberta e melhoria contínua, essencial para o desenvolvimento pessoal e profissional.",
+            ],
+            [
+                "titulo" => "Colaboração e Compartilhamento de Conhecimento",
+                "texto" => "A plataforma incentiva a colaboração entre as equipes e facilita o compartilhamento de conhecimentos, fortalecendo os laços internos e a capacidade de inovação.",
+            ],
+            [
+                "titulo" => "Desenvolvimento e Qualificação de Talentos",
+                "texto" => "Através de avaliações de desempenho e ferramentas de treinamento, a Beeapp ajuda as empresas a identificar e desenvolver os talentos, alinhando as habilidades dos colaboradores com as necessidades do negócio.",
+            ],
+            [
+                "titulo" => "Melhoria no Processo de Onboarding",
+                "texto" => "A solução otimiza o processo de integração de novos colaboradores, garantindo que eles se familiarizem rapidamente com os processos e a cultura da empresa, o que aumenta a retenção de talentos.",
+            ],
+            [
+                "titulo" => "Prevenção da Descontinuidade do Trabalho",
+                "texto" => "A plataforma conta com um mecanismo exclusivo que permite ao gestor fazer a associação de cargos em situações de férias, demissões e absenteísmo.",
+            ],
+            [
+                "titulo" => "Centralização e Gestão da Informação",
+                "texto" => "Ao centralizar documentos, processos, feedbacks e avaliações, a Beeapp garante que o conhecimento organizacional seja preservado e facilmente acessado, melhorando a tomada de decisões.",
+            ],
+            [
+                "titulo" => "Transparência e Acessibilidade",
+                "texto" => "A natureza baseada na nuvem da solução, garante que as informações e ferramentas de gestão estejam acessíveis a todos os colaboradores, independentemente de sua localização, promovendo uma gestão transparente e inclusiva.",
+            ],
+            [
+                "titulo" => "Elevação da Performance",
+                "texto" => "Com processos otimizados, colaboradores bem treinados e engajados e uma gestão de conhecimento eficaz, a Beeapp impacta significativamente na performance organizacional.",
+            ],
+            [
+                "titulo" => "Adaptabilidade e Crescimento",
+                "texto" => "A flexibilidade e escalabilidade da Beeapp, permitem que as empresas se adaptem rapidamente às mudanças de mercado e cresçam de maneira sustentável, mantendo a eficiência operacional.",
+            ],
+            [
+                "titulo" => "Controle das Operações em Múltiplos Locais",
+                "texto" => "Poder estruturar e gerir processos específicos para vários negócios em um único lugar, além de simplificar, torna efetiva e singular a gestão de filiais ou franquias.",
+            ],
+            [
+                "titulo" => "Compliance e Integridade",
+                "texto" => "Com a Beeap, é simples elaborar e compartilhar todos os documentos e treinamentos para garantir o cumprimento dos requisitos do programa de compliance e conformidade com leis e regulamentações.",
+            ],
+        ];
+    }    
 
     private function depoimentos() : array {
         return [
@@ -139,8 +208,9 @@ class SiteController extends Controller
     public function main()
     {
         return view('site.main',[
-            "porqueEscolheres" => $this->porqueEscolher(),
+            "funcionalidades" => $this->funcionalidades(),
             "beneficios" => $this->beneficios(),
+            "transformacoes" => $this->transformacoes(),
             "planos" => $this->planos(),
             "depoimentos" => $this->depoimentos(),
         ]);
@@ -150,8 +220,9 @@ class SiteController extends Controller
     {
         
         return view('site.main',[
-            "porqueEscolheres" => $this->porqueEscolher(),
+            "porqueEscolheres" => $this->funcionalidades(),
             "beneficios" => $this->beneficios(),
+            "transformacoes" => $this->transformacoes(),
             "planos" => $this->planos(),
             "depoimentos" => $this->depoimentos(),
             "mensagem" => true,

@@ -1,39 +1,138 @@
-<section class="container">
-    <h2 class="h1 text-center pb-4 pb-lg-5">Porque escolher o Beeapp</h2>
-    <div class="row">
-        @foreach ($porqueEscolheres as $porqueEscolher)
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center pb-md-2 mb-3 mb-lg-4">
-                <div class="d-inline-block bg-secondary rounded-circle p-3 mb-4">
-                    <i class='{{$porqueEscolher["icone"]}} icone-escolher'></i>
-                </div>
-                <h3 class="h5 pb-1 mb-2">{{$porqueEscolher["titulo"]}}</h3>
-                <p class="fs-sm">{{$porqueEscolher["texto"]}}</p>
-            </div>            
-        @endforeach
-    </div>
-</section>
-
 <!-- Dashboard -->
 <section class="container pt-3 pt-md-4 pt-lg-5 pb-2 mt-lg-2 mt-xl-4">
     <div class="row align-items-center">
-        <div class="rellax col-md-7" data-rellax-percentage="0.5" data-rellax-speed="-0.6" data-disable-parallax-down="lg" style="margin: -20px 0 0 0;">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/A2xHTUAs0g8?si=Gz7__WP5C-xSFv3y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="rellax col-md-5 col-xl-4 offset-xl-1 d-flex d-sm-block flex-column" data-rellax-percentage="0.5"
-            data-rellax-speed="0.8" data-disable-parallax-down="lg">
-            <h2 class="pb-3 pt-2 pt-md-0">Benefícios gerados aos clientes</h2>
-            <ul class="list-unstyled pb-2">
-                @foreach ($beneficios as $beneficio)
-                    <li class="d-flex align-items-center pb-1 mb-2">
-                        <i class="bx bx-check-circle text-primary fs-xl me-2"></i>
-                        {{ $beneficio }}
-                    </li>
-                @endforeach
-            </ul>
+
+        <div class="col align-self-center" data-rellax-percentage="0.5" data-rellax-speed="-0.6"
+            data-disable-parallax-down="lg" style="margin: -80px 0 100px 0;">
+
+            <!-- Video button on top of the image -->
+            <div class="position-relative bg-size-cover bg-position-center py-5"
+                style="background-image: url(assets/img/landing/software-agency-1/beeapp.jpg);">
+                <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-60"></span>
+                <div class="position-relative text-center zindex-5 px-3 py-4 py-sm-5 my-lg-5">
+                    <a href="https://www.youtube.com/watch?v=A2xHTUAs0g8"
+                        class="btn btn-video btn-icon bg-white btn-xl mb-2" data-bs-toggle="video"
+                        aria-label="Play video">
+                        <i class="bx bx-play"></i>
+                    </a>
+                    <div class="fs-sm text-white opacity-75">Assistir apresentação da Beeapp em vídeo</div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
+<section class="bg-secondary py-5">
+    <div class="container my-2 py-md-2 py-lg-5">
+        <div class="row">
+            <div class="col-xl-4 col-md-5 text-center text-md-start pb-2 pb-md-0 mb-4 mb-md-0">
+                <img src="assets/img/portfolio/courses/funcionalidades.png" class="rounded-2 mb-4">
+                <h2 class="pb-3 mb-1 mb-lg-2">Funcionalidades da Plataforma Beeapp</h2>
+                <p class="fs-lg pb-3 mb-2 mb-lg-3">Recursos poderosos que podemos oferecer a sua empresa</p>
+                <a href="#contato" class="btn btn-primary">Peça um teste grátis</a>
+            </div>
+            <div class="col-md-7 offset-xl-1">
+                <div class="accordion" id="funcionalidades">
+  
+                    @foreach ($funcionalidades as $i => $funcionalidade)
+                        <div class="accordion-item border-0 rounded-3 shadow-sm m-2">
+                            <h2 class="accordion-header" id="q6-heading">
+                                <button class="accordion-button shadow-none rounded-3 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#q{{ $i }}"
+                                    aria-expanded="false" aria-controls="q6">
+                                    <i class='bx bx-check-circle'></i>
+                                    <span class="ms-4">{{ $funcionalidade['titulo'] }}</span>
+                                </button>
+                            </h2>
+                            <div id="q{{ $i }}" class="accordion-collapse collapse"
+                                aria-labelledby="q6-heading" data-bs-parent="#funcionalidades">
+                                <div class="accordion-body fs-sm pt-0">
+                                    <p>{{ $funcionalidade['texto'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+  
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<section class="py-5">
+    <div class="container my-2 py-md-2 py-lg-5">
+        <div class="row">
+            <div class="col-xl-4 col-md-5 text-center text-md-start pb-2 pb-md-0 mb-4 mb-md-0">
+                <img src="assets/img/portfolio/courses/beneficios.png" class="rounded-2 mb-4">
+                <h2 class="pb-3 mb-1 mb-lg-2">Benefícios de Utilizar a Beeapp</h2>
+                <p class="fs-lg pb-3 mb-2 mb-lg-3">O que sua empresa ganha, ao utilizar a nossa ferramenta.</p>
+                <a href="#contato" class="btn btn-primary">Peça um teste grátis</a>
+            </div>
+            <div class="col-md-7 offset-xl-1">
+                <div class="accordion" id="beneficios">
+
+                    @foreach ($beneficios as $i => $beneficio)
+                        <div class="accordion-item border-0 rounded-3 shadow-sm m-2">
+                            <h2 class="accordion-header" id="q6-heading">
+                                <button class="accordion-button shadow-none rounded-3 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#b{{ $i }}"
+                                    aria-expanded="false" aria-controls="q6">
+                                    <i class='bx bx-check-circle'></i>
+                                    <span class="ms-4">{{ $beneficio['titulo'] }}</span>
+                                </button>
+                            </h2>
+                            <div id="b{{ $i }}" class="accordion-collapse collapse"
+                                aria-labelledby="q6-heading" data-bs-parent="#beneficios">
+                                <div class="accordion-body fs-sm pt-0">
+                                    <p>{{ $beneficio['texto'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-secondary py-5">
+    <div class="container my-2 py-md-2 py-lg-5">
+        <div class="row">
+            <div class="col-xl-4 col-md-5 text-center text-md-start pb-2 pb-md-0 mb-4 mb-md-0">
+                <img src="assets/img/portfolio/courses/transformacoes.png" class="rounded-2 mb-4">
+                <h2 class="pb-3 mb-1 mb-lg-2">Transformações geradas aos nossos clientes</h2>
+                <p class="fs-lg pb-3 mb-2 mb-lg-3">Conheça algumas mudanças que a plataforma Beeapp gera em nossos clientes</p>
+                <a href="#contato" class="btn btn-primary">Peça um teste grátis</a>
+            </div>
+            <div class="col-md-7 offset-xl-1">
+                <div class="accordion" id="transformacoes">
+
+                    @foreach ($transformacoes as $i => $transformacao)
+                        <div class="accordion-item border-0 rounded-3 shadow-sm m-2">
+                            <h2 class="accordion-header" id="q6-heading">
+                                <button class="accordion-button shadow-none rounded-3 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#t{{ $i }}"
+                                    aria-expanded="false" aria-controls="q6">
+                                    <i class='bx bx-check-circle'></i>
+                                    <span class="ms-4">{{ $transformacao['titulo'] }}</span>
+                                </button>
+                            </h2>
+                            <div id="t{{ $i }}" class="accordion-collapse collapse"
+                                aria-labelledby="q6-heading" data-bs-parent="#transformacoes">
+                                <div class="accordion-body fs-sm pt-0">
+                                    <p>{{ $transformacao['texto'] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Use cases (Tabs) -->
 <section class="container pt-5 pb-2 mt-3 mt-sm-4 mt-xl-5">
@@ -84,7 +183,11 @@
                 <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
                     <h3 class="mb-lg-4">Gestão de documentos</h3>
                     <p>
-                        Com o BeeApp, a gestão de <span class="texto-destaque">documentos em sua empresa se torna padronizada, segura e otimizada</span>, assegurando o compartilhamento apropriado com os departamentos e cargos específicos de seus colaboradores. Adicionalmente, o aplicativo oferece recursos avançados de controle de versionamento e realiza backups diários dos dados, garantindo a integridade e a disponibilidade das informações.
+                        Com o BeeApp, a gestão de <span class="texto-destaque">documentos em sua empresa se torna
+                            padronizada, segura e otimizada</span>, assegurando o compartilhamento apropriado com os
+                        departamentos e cargos específicos de seus colaboradores. Adicionalmente, o aplicativo oferece
+                        recursos avançados de controle de versionamento e realiza backups diários dos dados, garantindo
+                        a integridade e a disponibilidade das informações.
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-7 mt-md-4">
@@ -100,7 +203,11 @@
                 <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
                     <h3 class="mb-lg-4">Gestão de tarefas</h3>
                     <p>
-                        Nossa ferramenta avançada de gerenciamento de tarefas é projetada para permitir que sua empresa <span class="texto-destaque">mantenha um controle rigoroso sobre a execução de atividades</span>, seja de forma individual ou em equipe. Ela facilita o processo ao notificar todos os participantes envolvidos, assegurando assim uma comunicação eficaz e aumentando a produtividade.
+                        Nossa ferramenta avançada de gerenciamento de tarefas é projetada para permitir que sua empresa
+                        <span class="texto-destaque">mantenha um controle rigoroso sobre a execução de
+                            atividades</span>, seja de forma individual ou em equipe. Ela facilita o processo ao
+                        notificar todos os participantes envolvidos, assegurando assim uma comunicação eficaz e
+                        aumentando a produtividade.
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-7 mt-md-4">
@@ -116,7 +223,10 @@
                 <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
                     <h3 class="mb-lg-4">Feedback individuais</h3>
                     <p>
-                        Através de feedbacks personalizados, seus usuários não apenas recebem informações relevantes, mas <span class="texto-destaque">você também é notificado quando essas informações foram acessadas</span>. Além disso, eles têm a oportunidade de fornecer suas próprias impressões e informações de volta à empresa.                        
+                        Através de feedbacks personalizados, seus usuários não apenas recebem informações relevantes,
+                        mas <span class="texto-destaque">você também é notificado quando essas informações foram
+                            acessadas</span>. Além disso, eles têm a oportunidade de fornecer suas próprias impressões e
+                        informações de volta à empresa.
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-7 mt-n3 mt-md-1">
@@ -132,7 +242,11 @@
                 <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
                     <h3 class="mb-lg-4">Avaliações individuais</h3>
                     <p>
-                        O BeeApp oferece funcionalidades avançadas para a <span class="texto-destaque">geração de relatórios individuais da sua equipe, apresentando métricas completamente personalizadas</span> de acordo com as especificidades do seu negócio. Com essa ferramenta, é possível identificar os membros com os melhores e os piores desempenhos, permitindo assim uma organização mais eficaz e direcionada da sua empresa.                        
+                        O BeeApp oferece funcionalidades avançadas para a <span class="texto-destaque">geração de
+                            relatórios individuais da sua equipe, apresentando métricas completamente
+                            personalizadas</span> de acordo com as especificidades do seu negócio. Com essa ferramenta,
+                        é possível identificar os membros com os melhores e os piores desempenhos, permitindo assim uma
+                        organização mais eficaz e direcionada da sua empresa.
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-7 mt-n3 mt-md-1">

@@ -3,8 +3,10 @@
     <div class="container pt-lg-3">
         <div class="row flex-lg-nowrap">
             <div class="col-lg-6 col-xl-5 text-center text-lg-start pt-5 mt-xl-4">
-                <h1 class="display-4 pt-5 pb-2 pb-lg-3 mt-sm-2 mt-lg-5">A gestão inteligente que faltava para sua empresa</h1>
-                <p class="fs-lg mb-4 mb-lg-5">Gestão de compliance, treinamento, feedbacks, gestão de tarefas, controle de documentos, associação de funções e muito mais.</p>
+                <h1 class="display-4 pt-5 pb-2 pb-lg-3 mt-sm-2 mt-lg-5">Gestão inteligente que faltava para sua empresa</h1>
+                <p class="fs-lg mb-4 mb-lg-5">
+                    Gestão de Processos, Feedbacks Documentados, Tarefas Procedimentadas, Avaliação de Desempenho, Onboarding e muito mais...
+                </p>
                 <a href="{{ asset('assets/pdf/apresentacao.pdf') }}" class="btn btn-primary btn-lg" target="_blank">Apresentação em PDF</a>
             </div>
             <!-- Layer parallax -->

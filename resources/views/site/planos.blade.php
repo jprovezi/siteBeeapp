@@ -13,11 +13,14 @@
                                         alt="Icon">
                                 </div>
                                 <div class="ps-4">
-                                    <h3 class="fs-lg fw-bold text-body mb-2">Bee Basic</h3>
+                                    <h3 class="fs-lg fw-bold text-body mb-2">PLANO IMPULSO</h3>
                                     <h4 class="h3 lh-1 mb-0">
-                                        <span class="text-body fs-sm fw-normal">Ideial para pequenos negócios</span>
+                                        <span class="h6">12x </span>R$540,00
                                     </h4>
                                 </div>
+                            </div>
+                            <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
+                                <p>Perfeito para empresas de pequeno porte e startups, que buscam estruturar suas operações, aprimorar sua gestão e alavancar o crescimento do negócio.</p>
                             </div>
                             <ul class="list-unstyled fs-sm pb-md-3 mb-3">
                                 @foreach ($planos["basic"] as $plano)
@@ -29,7 +32,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0 pb-4">
-                            <a href="#contato" class="btn btn-outline-primary w-100">Peça uma demonstração</a>
+                            <a href="#contato" class="btn btn-outline-primary w-100">Peça um teste grátis</a>
                         </div>
                     </div>
                 </div>
@@ -38,17 +41,19 @@
                         style="min-width: 18rem;">
                         <div class="card-body">
                             <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
-                                <div class="flex-shrink-0 rounded-3"
-                                    style="background-color: rgba(255,255,255, .1);">
-                                    <img src="assets/img/landing/saas-1/pricing/standard.png" width="84"
+                                <div class="flex-shrink-0 bg-secondary rounded-3">
+                                    <img src="assets/img/landing/saas-1/pricing/basic.png" width="84"
                                         alt="Icon">
                                 </div>
                                 <div class="ps-4">
-                                    <h3 class="fs-lg fw-bold text-light opacity-70 mb-2">Bee Standard</h3>
-                                    <h4 class="h3 text-light lh-1 mb-0">
-                                        <span class="fs-sm fw-normal opacity-70">Ideal para médias empresas</span>
+                                    <h3 class="fs-lg fw-bold text-body mb-2">PLANO CRESCIMENTO</h3>
+                                    <h4 class="h3 lh-1 mb-0">
+                                        Sob consulta
                                     </h4>
                                 </div>
+                            </div>
+                            <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
+                                <p>Projetado para empresas de médio porte, com necessidade de padronizar e estruturar processos operacionais e de negócios e promover a colaboração efetiva.</p>
                             </div>
                             <ul class="list-unstyled fs-sm pb-md-3 mb-3">
                                 @foreach ($planos["standard"] as $plano)
@@ -60,7 +65,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0 pb-4">
-                            <a href="#contato" class="btn btn-outline-primary w-100">Peça uma demonstração</a>
+                            <a href="#contato" class="btn btn-outline-primary w-100">Peça um teste grátis</a>
                         </div>
                     </div>
                 </div>
@@ -69,16 +74,19 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
                                 <div class="flex-shrink-0 bg-secondary rounded-3">
-                                    <img src="assets/img/landing/saas-1/pricing/ultimate.png" width="84"
+                                    <img src="assets/img/landing/saas-1/pricing/basic.png" width="84"
                                         alt="Icon">
                                 </div>
                                 <div class="ps-4">
-                                    <h3 class="fs-lg fw-bold text-body mb-2">Bee Ultimate</h3>
+                                    <h3 class="fs-lg fw-bold text-body mb-2">PLANO EXCELÊNCIA</h3>
                                     <h4 class="h3 lh-1 mb-0">
-                                        <span class="text-body fs-sm fw-normal">Ideal para grandes empresa</span>
+                                        Sob consulta
                                     </h4>
-                                </div>
+                                </div>                              
                             </div>
+                            <div class="d-flex align-items-center pb-2 pb-md-3 mb-4">
+                                <p>Destinado a organizações estabelecidas que desejam uma solução abrangente para otimizar a gestão de processos e maximizar a performance organizacional.</p>
+                            </div>                              
                             <ul class="list-unstyled fs-sm pb-md-3 mb-3">
                                 @foreach ($planos["ultimate"] as $plano)
                                     <li class="d-flex mb-2">
@@ -89,7 +97,7 @@
                             </ul>
                         </div>
                         <div class="card-footer border-0 pt-0 pb-4">
-                            <a href="#contato" class="btn btn-outline-primary w-100">Peça uma demonstração</a>
+                            <a href="#contato" class="btn btn-outline-primary w-100">Peça um teste grátis</a>
                         </div>
                     </div>
                 </div>

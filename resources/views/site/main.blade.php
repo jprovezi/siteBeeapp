@@ -7,8 +7,7 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Beeapp Gestão Inteligente">
-    <meta name="keywords"
-        content="Beeapp, Negócios, App para empresas, Gestão de documentos, Tarefas, Equipe">
+    <meta name="keywords" content="Beeapp, Negócios, App para empresas, Gestão de documentos, Tarefas, Equipe">
     <meta name="author" content="J6 Softwares para Internet">
 
     <!-- Viewport -->
@@ -30,13 +29,13 @@
     <!-- Vendor Styles -->
     <link rel="stylesheet" media="screen" href="assets/vendor/boxicons/css/boxicons.min.css">
     <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
 
     <!-- Main Theme Styles + Bootstrap -->
     <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
 
     <!-- Page loading styles -->
     <style>
-
         [data-bs-theme=dark] .navbar:not([data-bs-theme=light]) {
             --si-navbar-stuck-bg: #052042;
             --si-navbar-brand-color: #fff;
@@ -46,6 +45,18 @@
             --si-navbar-hover-color: #ffc800;
             --si-navbar-disabled-color: rgba(255, 255, 255, 0.4);
             --si-navbar-active-color: #ffc800;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-color: #ffc800 !important;
+        }
+        
+        .bx-check-circle{
+            color: #ffc800 !important;
+        }
+
+        .btn-video:hover {
+            background-color: #ffc800 !important;
         }
 
         .btn-outline-primary {
@@ -63,53 +74,59 @@
             --si-btn-disabled-bg: transparent;
             --si-btn-disabled-border-color: #ffc800;
             --si-gradient: none;
-        }        
+        }
 
         body {
             background-color: #052042;
         }
 
         .bg-primary {
-            background-color: #ffc800; !important;
-        }        
+            background-color: #ffc800;
+            !important;
+        }
 
-        .icone-escolher{
+        .icone-escolher {
             color: #ffc800;
-            font-size: 40px; 
+            font-size: 40px;
         }
 
-        .bx-check-circle{
+        .bx-check-circle {
             color: #ffc800 !important;
         }
 
-        .texto-destaque{
+        .texto-destaque {
             color: #ffc800 !important;
         }
 
-        .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        .nav-tabs .nav-link.active,
+        .nav-tabs .nav-item.show .nav-link {
             background-color: #ffc800 !important;
         }
 
-        .nav-tabs .nav-link:hover:not(.active), .nav-tabs .nav-link.show:not(.active) {
-            color:  #ffc800 !important;
+        .nav-tabs .nav-link:hover:not(.active),
+        .nav-tabs .nav-link.show:not(.active) {
+            color: #ffc800 !important;
         }
+
         .text-primary {
-            color:  #ffc800 !important;
+            color: #ffc800 !important;
         }
 
-        .nav-link:hover, .nav-link:focus {
-            color:  #052042 !important;
-        }        
+        .nav-link:hover,
+        .nav-link:focus {
+            color: #052042 !important;
+        }
 
-        .nav-link-rodape:hover, .nav-link-rodape:focus {
-            color:  #ffc800 !important;
-        }        
-        
+        .nav-link-rodape:hover,
+        .nav-link-rodape:focus {
+            color: #ffc800 !important;
+        }
+
         .text-gradient-primary {
             background: linear-gradient(to right, #ffc800, #ffe37b, #000);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: rgba(0,0,0,0);
-        }        
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+        }
 
         .btn-primary {
             --si-btn-color: #052042;
@@ -263,7 +280,10 @@
                         <img src="assets/img/logo.png" width="200" alt="Beeapp">
                     </div>
                     <p class="fs-sm pb-lg-3 mb-4">
-                        A Beeapp, uma inovadora empresa especializada em tecnologia e consultoria na gestão de processos empresariais, está comprometida com a constante aprimoramento de sua plataforma. Nossa equipe, reconhecida por sua justiça e integridade, trabalha lado a lado com nossos clientes para garantir excelência e inovação contínuas.                        
+                        A Beeapp, uma inovadora empresa especializada em tecnologia e consultoria na gestão de processos
+                        empresariais, está comprometida com a constante aprimoramento de sua plataforma. Nossa equipe,
+                        reconhecida por sua justiça e integridade, trabalha lado a lado com nossos clientes para
+                        garantir excelência e inovação contínuas.
                     </p>
                 </div>
                 <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
@@ -272,16 +292,20 @@
                             <h6 class="mb-2">Navegação</h6>
                             <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                                 <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                                    <li class="nav-item"><a href="{{config('APP_URL')}}"
+                                    <li class="nav-item"><a href="{{ route("home") }}"
                                             class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Home</a></li>
-                                    <li class="nav-item"><a href="{{config('APP_URL')}}#conheca"
-                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Conheça o Beeapp</a></li>
-                                    <li class="nav-item"><a href="{{config('APP_URL')}}#planos"
-                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Planos</a></li>
-                                    <li class="nav-item"><a href="{{config('APP_URL')}}#depoimentos"
-                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Depoimentos</a></li>
-                                    <li class="nav-item"><a href="{{config('APP_URL')}}#contato"
-                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Fale Conosco</a></li>
+                                    <li class="nav-item"><a href="#conheca"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Conheça o
+                                            Beeapp</a></li>
+                                    <li class="nav-item"><a href="#planos"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Planos</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#depoimentos"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Depoimentos</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#contato"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">Fale
+                                            Conosco</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -290,8 +314,15 @@
                             <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                                 <ul class="nav flex-column mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a href="https://www.instagram.com/beeapp_oficial" class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">
+                                        <a href="https://www.instagram.com/beeapp_oficial"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">
                                             Instagram
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://www.linkedin.com/in/bee-app-344397303/"
+                                            class="nav-link nav-link-rodape d-inline-block px-0 pt-1 pb-2">
+                                            Linkedin
                                         </a>
                                     </li>
                                 </ul>
@@ -299,8 +330,10 @@
                         </div>
                         <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                             <h6 class="mb-2">Contatos</h6>
-                            <a href="mailto:ataliba@beeapp.com.br" class="fw-medium nav-link nav-link-rodape">ataliba@beeapp.com.br</a>
-                            <a href="https://api.whatsapp.com/send?phone=5547999227879" class="fw-medium nav-link nav-link-rodape">47 9 9922-7879</a>
+                            <a href="mailto:ataliba@beeapp.com.br"
+                                class="fw-medium nav-link nav-link-rodape">ataliba@beeapp.com.br</a>
+                            <a href="https://api.whatsapp.com/send?phone=5547999227879"
+                                class="fw-medium nav-link nav-link-rodape">47 9 9922-7879</a>
                         </div>
                     </div>
                 </div>
@@ -326,6 +359,8 @@
     <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
     <script src="assets/vendor/rellax/rellax.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/lightgallery/lightgallery.min.js"></script>
+    <script src="assets/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
 
     <!-- Main Theme Script -->
     <script src="assets/js/theme.js"></script>
