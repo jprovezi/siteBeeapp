@@ -340,7 +340,7 @@
             </div>
             <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
                 Desenvolvido por
-                <a class="nav-link nav-link-rodape d-inline-block p-0" href="https:www.j6.net.br" target="_blank"
+                <a class="nav-link nav-link-rodape d-inline-block p-0" href="https://www.j6.net.br" target="_blank"
                     rel="noopener">J6 Softwares para Internet</a>
             </p>
         </div>
