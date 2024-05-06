@@ -20,6 +20,9 @@
                     <li class="nav-item">
                         <a href="#depoimentos" class="nav-link nav-link-rodape">Depoimentos</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{config("beeapp.url_site")}}/assets/pdf/beefinance.pdf" class="nav-link nav-link-rodape">BeeFinance</a>
+                    </li>
                 </ul>
             </div>
             <div class="offcanvas-header border-top">

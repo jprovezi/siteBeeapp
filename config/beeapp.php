@@ -2,7 +2,7 @@
 
 return [
 
-    "url_site" => "http://localhost",
+    "url_site" => "https://www.beeappbrasil.com.br",
 
 ];
 
