@@ -1,7 +1,7 @@
 <header class="header navbar navbar-expand-lg position-absolute navbar-sticky">
     <div class="container px-3">
         <a href="{{route('home')}}" class="navbar-brand pe-3">
-            <img src="assets/img/logo-2.png" width="200" alt="Beeapp">
+            <img src="assets/img/logo-1.png" width="200" alt="Beeapp">
         </a>
         <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">

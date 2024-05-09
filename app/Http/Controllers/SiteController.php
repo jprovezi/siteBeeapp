@@ -18,7 +18,7 @@ class SiteController extends Controller
                 "Acesso total à todas as funcionalidades da plataforma",
                 "1 hora de mentoria de adequação da plataforma às necessidades do cliente",
                 "Cloud em nuvem com capacidade de armazenagem gerenciada",
-                "Disponibilidade de acesso para até 20 usuários",
+                "Disponibilidade de acesso para até 10 usuários",
                 "Suporte técnico em horário comercial via plataforma Beeapp",
                 "a partir do segundo ano, haverá cobrança apenas do custo da licença de uso da plataforma.",
             ],

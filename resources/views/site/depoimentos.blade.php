@@ -3,11 +3,11 @@
     <div class="container py-2 py-md-3 py-lg-4 py-xl-5">
         <div class="row row-cols-1 row-cols-md-2 gx-3 gx-lg-4">
             <div class="col-md-6 mb-3 mb-md-0">
-                <div class="card border-0 bg-dark h-100 p-xl-4">
+                <div class="card border-0 h-100 p-xl-4" style="background-color: #052042;">
                     <div class="card-body">
                         <h2 class="display-1 text-light">+ de 5.000</h2>
                         <p class="lead fw-medium text-light">
-                            Usuários ativos suportado por nossos <span class='texto-destaque'>servidores de alta potência</span>, oferecendo velocidade superior e segurança inigualável. Estamos em atualização constante da nossa plataforma!
+                            Usuários ativos suportado por nossos <span style="color: #ffc800;">servidores de alta potência</span>, oferecendo velocidade superior e segurança inigualável. Estamos em atualização constante da nossa plataforma!
                         </p>
                     </div>
                 </div>

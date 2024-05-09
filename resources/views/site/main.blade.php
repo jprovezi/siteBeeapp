@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -77,7 +77,7 @@
         }
 
         body {
-            background-color: #052042;
+            background-color: #fff;
         }
 
         .bg-primary {
@@ -95,7 +95,7 @@
         }
 
         .texto-destaque {
-            color: #ffc800 !important;
+            color: #052042 !important;
         }
 
         .nav-tabs .nav-link.active,
@@ -129,20 +129,20 @@
         }
 
         .btn-primary {
-            --si-btn-color: #052042;
-            --si-btn-bg: #ffc800;
-            --si-btn-border-color: #ffc800;
-            --si-btn-hover-color: #052042;
-            --si-btn-hover-bg: #ffc800;
-            --si-btn-hover-border-color: #ffc800;
+            --si-btn-color: #fff;
+            --si-btn-bg: #052042;
+            --si-btn-border-color: #052042;
+            --si-btn-hover-color: #fff;
+            --si-btn-hover-bg: #052042;
+            --si-btn-hover-border-color: #052042;
             --si-btn-focus-shadow-rgb: 84, 87, 205;
-            --si-btn-active-color: #052042;
-            --si-btn-active-bg: #ffc800;
-            --si-btn-active-border-color: #ffc800;
+            --si-btn-active-color: #fff;
+            --si-btn-active-bg: #052042;
+            --si-btn-active-border-color: #052042;
             --si-btn-active-shadow: unset;
-            --si-btn-disabled-color: #052042;
-            --si-btn-disabled-bg: #ffc800;
-            --si-btn-disabled-border-color: #ffc800;
+            --si-btn-disabled-color: #fff;
+            --si-btn-disabled-bg: #052042;
+            --si-btn-disabled-border-color: #052042;
         }
 
         .page-loading {
@@ -264,7 +264,9 @@
     <main class="page-wrapper">
         @include('site.navbar')
         @include('site.banner-parallax')
-        @include('site.conheca-o-beeapp')
+        {{--@include('site.conheca-o-beeapp')--}}
+        @include('site.video')
+        @include('site.o-que-o-beeapp-faz')
         @include('site.planos')
         @include('site.depoimentos')
         @include('site.contato')
@@ -277,13 +279,10 @@
             <div class="row pb-5">
                 <div class="col-lg-4 col-md-6">
                     <div class="navbar-brand text-dark p-0 me-0 mb-3 mb-lg-4">
-                        <img src="assets/img/logo.png" width="200" alt="Beeapp">
+                        <img src="assets/img/logo-1.png" width="200" alt="Beeapp">
                     </div>
                     <p class="fs-sm pb-lg-3 mb-4">
-                        A Beeapp, uma inovadora empresa especializada em tecnologia e consultoria na gestão de processos
-                        empresariais, está comprometida com a constante aprimoramento de sua plataforma. Nossa equipe,
-                        reconhecida por sua justiça e integridade, trabalha lado a lado com nossos clientes para
-                        garantir excelência e inovação contínuas.
+                        Na Beeapp, transformamos dados em inteligência para impulsionar a gestão e o crescimento empresarial. Nosso compromisso é com a inovação e a eficácia, oferecendo uma plataforma responsiva e intuitiva para atender às necessidades dinâmicas do mercado atual.
                     </p>
                 </div>
                 <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
