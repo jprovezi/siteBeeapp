@@ -3,7 +3,7 @@
     <div class="row align-items-center">
 
         <div class="col align-self-center" data-rellax-percentage="0.5" data-rellax-speed="-0.6"
-            data-disable-parallax-down="lg" style="margin: -80px 0 100px 0;">
+            data-disable-parallax-down="lg" style="margin: -130px 0 100px 0;">
 
             <!-- Video button on top of the image -->
             <div class="position-relative bg-size-cover bg-position-center py-5"

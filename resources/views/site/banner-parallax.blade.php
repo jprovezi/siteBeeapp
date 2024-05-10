@@ -1,5 +1,5 @@
 <!-- Hero section with layer parallax gfx -->
-<section class="position-relative overflow-hidden py-4 mb-3" style="background-color: #f3f6ff;">
+<section class="position-relative overflow-hidden py-4 mb-3" style="background-color: #ffd402;">
     <div class="container pt-lg-3">
         <div class="row flex-lg-nowrap">
             <div class="col-lg-6 col-xl-5 text-center text-lg-start pt-5 mt-xl-4">

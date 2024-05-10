@@ -74,6 +74,8 @@
             --si-btn-disabled-bg: transparent;
             --si-btn-disabled-border-color: #ffc800;
             --si-gradient: none;
+            background-color: #ffc800 !important;
+            color: #052042 !important;
         }
 
         body {
