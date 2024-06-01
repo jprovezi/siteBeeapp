@@ -9,6 +9,7 @@
     <meta name="description" content="Beeapp Gestão Inteligente">
     <meta name="keywords" content="Beeapp, Negócios, App para empresas, Gestão de documentos, Tarefas, Equipe">
     <meta name="author" content="J6 Softwares para Internet">
+    <meta name="facebook-domain-verification" content="71j1yrdp6yf9ivw09efdwu599hjcw9" />
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
