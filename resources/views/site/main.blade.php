@@ -272,6 +272,7 @@
         @include('site.o-que-o-beeapp-faz')
         @include('site.planos')
         @include('site.depoimentos')
+        @include('site.beefinance')
         @include('site.contato')
     </main>
 
